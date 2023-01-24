@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>e-mobile store</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+            <div class="h-15 w-40 mx-4 cursor-pointer ">
+                <img src="https://www.emobilekart.com/LogoImages/emobilekart_png_03.png">
+            </div>
+            <form class="d-flex">
+                <input class=" form-control me-2" type="search" placeholder="Search mobile" aria-label="Search">
+                <button class=" btn btn-outline-success" type="submit">Search</button>
+            </form>
+            <div class="dropdown">
+                <button class="font-bold dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
+                    aria-expanded="false">Profile</button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                    <li><button class="dropdown-item" type="button">LOGIN/SIGNUP</button></li>
+                    <li><button class="dropdown-item" type="button">Edit Profile</button></li>
+                    <li><button class="dropdown-item" type="button">Addresses</button></li>
+                    <li><button class="dropdown-item" type="button">Orders</button></li>
+                    <li><button class="dropdown-item" type="button">Wishlist</button></li>
+                    <li><button class="dropdown-item" type="button">Cart</button></li>
+                </ul>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                class="cursor-pointer bi bi-cart3" viewBox="0 0 16 16">
+                <path
+                    d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+            </svg>
+        </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-blue-500">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="pl-28 nav-item">
+                        <a class="text-white font-bold nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="pl-10 nav-item dropdown">
+                        <a class="text-white font-bold nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            About
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">About Us</a></li>
+                            <li><a class="dropdown-item" href="#">CEO Massage</a></li>
+                        </ul>
+                    </li>
+                    <li class="pl-10 nav-item dropdown">
+                        <a class="text-white font-bold nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Shop
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Mobile</a></li>
+                            <li><a class="dropdown-item" href="#">Tablet</a></li>
+                            <li><a class="dropdown-item" href="#">Mobile Accessoris</a></li>
+                        </ul>
+                    </li>
+                    <li class="pl-10 nav-item dropdown">
+                        <a class="text-white font-bold nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Brands
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Apple</a></li>
+                            <li><a class="dropdown-item" href="#">Nokia</a></li>
+                            <li><a class="dropdown-item" href="#">Vivo</a></li>
+                            <li><a class="dropdown-item" href="#">Samsung</a></li>
+                            <li><a class="dropdown-item" href="#">Realme</a></li>
+                            <li><a class="dropdown-item" href="#">Redmi</a></li>
+                            <li><a class="dropdown-item" href="#">Oppo</a></li>
+                            <li><a class="dropdown-item" href="#">Infinix</a></li>
+                        </ul>
+                    </li>
+                    <li class="pl-10 nav-item dropdown">
+                        <a class="text-white font-bold nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Offer
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Apple iphone 11 worth ₹60000</a></li>
+                            <li><a class="dropdown-item" href="#">Realme 8pro worth ₹15000</a></li>
+                            <li><a class="dropdown-item" href="#">Samsunt note ultra worth ₹150000</a></li>
+                        </ul>
+                    </li>
+                    <li class="pl-10 nav-item">
+                        <a class="text-white font-bold nav-link active" aria-current="page" href="#">Exchange
+                            Offer</a>
+                    </li>
+                    <li class="pl-10 nav-item">
+                        <a class="text-white font-bold nav-link active" aria-current="page" href="#">Track Your
+                            Order</a>
+                    </li>
+                    <li class="pl-10 nav-item">
+                        <a class="text-white font-bold nav-link active" aria-current="page" href="#">Contacts</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="carouselExampleIndicators" class="cursor-pointer carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://www.emobilekart.com/pimages/cd1de31e-a8a8-4354-a2e8-8cbd55da8a0fVivo%20Y75%2021990.jpg"
+                    class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://www.emobilekart.com/pimages/8981dc8c-cf09-44e2-8f05-1a678d973e78WhatsApp%20Image%202022-03-07%20at%2011.45.20%20AM.jpeg"
+                    class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://www.emobilekart.com/pimages/f7835450-0817-4672-85f6-5d447ca7c0beVivo%20Y21%204-64%20Rs.13999.jpg"
+                    class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div class="container">
+        <div class="h-auto row">
+            <div class="border-8 col">
+                <img
+                    src="https://www.suprememobiles.in/public//vendor/conceps-admin/assets/uploads/products/k9tg81552568502/2.jpg">
+                <div class="rounded-3xl bg-blue-800 text-white d-grid gap-1">
+                    <button class=" btn btn-primary" type="">Buy Now</button>
+                </div>
+            </div>
+            <div class="border-8  col">
+                <img src="https://m.media-amazon.com/images/I/71T3imOJleL._SL1500_.jpg">
+                <div class="rounded-3xl bg-blue-800 text-white d-grid gap-1">
+                    <button class=" btn btn-primary" type="">Buy Now</button>
+                </div>
+            </div>
+            <div class="border-8 col">
+                <img src="https://atplne.in/store/wp-content/uploads/2021/10/U-21A.jpg">
+                <div class="rounded-3xl bg-blue-800 text-white d-grid gap-1">
+                    <button class=" btn btn-primary" type="">Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="h-arto row">
+            <div class="border-8 col">
+                <img
+                    src="https://www.suprememobiles.in/public//vendor/conceps-admin/assets/uploads/products/k9tg81552568502/2.jpg">
+                <div class="rounded-3xl bg-blue-800 text-white d-grid gap-1">
+                    <button class=" btn btn-primary" type="">Buy Now</button>
+                </div>
+            </div>
+            <div class="border-8  col">
+                <img src="https://m.media-amazon.com/images/I/71T3imOJleL._SL1500_.jpg">
+                <div class="rounded-3xl bg-blue-800 text-white d-grid gap-1">
+                    <button class=" btn btn-primary" type="">Buy Now</button>
+                </div>
+            </div>
+            <div class="border-8 col">
+                <img src="https://atplne.in/store/wp-content/uploads/2021/10/U-21A.jpg">
+                <div class="rounded-3xl bg-blue-800 text-white d-grid gap-1">
+                    <button class=" btn btn-primary" type="">Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="h-arto row">
+            <div class="border-8 col">
+                <img
+                    src="https://www.suprememobiles.in/public//vendor/conceps-admin/assets/uploads/products/k9tg81552568502/2.jpg">
+                <div class="rounded-3xl bg-blue-800 text-white d-grid gap-1">
+                    <button class=" btn btn-primary" type="">Buy Now</button>
+                </div>
+            </div>
+            <div class="border-8  col">
+                <img src="https://m.media-amazon.com/images/I/71T3imOJleL._SL1500_.jpg">
+                <div class="rounded-3xl bg-blue-800 text-white d-grid gap-1">
+                    <button class=" btn btn-primary" type="">Buy Now</button>
+                </div>
+            </div>
+            <div class="border-8 col">
+                <img src="https://atplne.in/store/wp-content/uploads/2021/10/U-21A.jpg">
+                <div class="rounded-3xl bg-blue-800 text-white d-grid gap-1">
+                    <button class=" btn btn-primary" type="">Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="h-arto row">
+            <div class="border-8 col">
+                <img
+                    src="https://www.suprememobiles.in/public//vendor/conceps-admin/assets/uploads/products/k9tg81552568502/2.jpg">
+                <div class="rounded-3xl bg-blue-800 text-white d-grid gap-1">
+                    <button class=" btn btn-primary" type="">Buy Now</button>
+                </div>
+            </div>
+            <div class="border-8  col">
+                <img src="https://m.media-amazon.com/images/I/71T3imOJleL._SL1500_.jpg">
+                <div class="rounded-3xl bg-blue-800 text-white d-grid gap-1">
+                    <button class=" btn btn-primary" type="">Buy Now</button>
+                </div>
+            </div>
+            <div class="border-8 col">
+                <img src="https://atplne.in/store/wp-content/uploads/2021/10/U-21A.jpg">
+                <div class="rounded-3xl bg-blue-800 text-white d-grid gap-1">
+                    <button class=" btn btn-primary" type="">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="h-16 bg-zinc-800 row">
+        <div class="col py-4 pl-6 container-fluid">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                class="text-white bi bi-instagram " viewBox="0 0 16 16">
+                <path
+                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+            </svg>
+        </div>
+
+        <div class="col text-right container-fluid py-3 pr-8 ">
+            <p class=" text-white text-sm">Copyright &copy; 2022 e-mobile.com All Rights Reserve. </p>
+        </div>
+
+    </div>
+</body>
+
+</html>
